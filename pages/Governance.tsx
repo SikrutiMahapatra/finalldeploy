@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { useAuth } from '../context/AuthContext.tsx';
-import { db } from '../db.ts';
+import { useAuth } from '../context/AuthContext';
+import { db } from '../db';
 import { 
   Gavel, 
   ShieldCheck, 

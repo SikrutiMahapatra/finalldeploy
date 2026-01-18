@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { useAuth } from '../context/AuthContext.tsx';
+import { useAuth } from '../context/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
 import { 
   Building2, 
@@ -371,7 +370,7 @@ const BuilderList: React.FC = () => {
                         <div className="absolute bottom-6 left-6 text-white space-y-1 drop-shadow-md bg-black/50 p-4 rounded-2xl backdrop-blur-sm border border-white/10">
                           <p className="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-400">Cyber Vista Sync</p>
                           <p className="text-xs font-black flex items-center gap-2">
-                             <Crosshair className="w-3.5 h-3.5 text-emerald-400" /> Satisfied > 94.2% Match
+                             <Crosshair className="w-3.5 h-3.5 text-emerald-400" /> Satisfied {'&gt;'} 94.2% Match
                           </p>
                           <p className="text-[9px] font-bold text-white/70 uppercase">Institutional Verification active</p>
                         </div>
@@ -442,7 +441,7 @@ const BuilderList: React.FC = () => {
                                <span className="text-3xl font-black text-indigo-600">94.2%</span>
                                <span className="bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 px-3 py-1 rounded text-[9px] font-black uppercase tracking-widest">High Trust Rank</span>
                              </div>
-                             <p className="text-[9px] text-slate-400 font-bold uppercase">Consensus threshold (>90%) Satisfied</p>
+                             <p className="text-[9px] text-slate-400 font-bold uppercase">Consensus threshold ({'&gt;'}90%) Satisfied</p>
                           </div>
                         </div>
                       </div>
